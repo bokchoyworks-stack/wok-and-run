@@ -1,0 +1,36 @@
+name: Wok and Run support
+description: Report a problem or ask for help
+title: "[Support] "
+labels: [support]
+body:
+  - type: markdown
+    attributes:
+      value: "Please do not include passwords, payment details, or other sensitive information."
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options: [English, 日本語, 简体中文]
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: iPhone model and iOS version
+      placeholder: "Example: iPhone 17 Pro, iOS 26"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      placeholder: "Example: 1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the stage and steps that reproduce the problem.
+    validations:
+      required: true
